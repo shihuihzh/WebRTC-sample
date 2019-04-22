@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RTCPeerConnection 传输视频流</title>
+
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <h1>RTCPeerConnection 传输视频流</h1>
+
+    <!-- 设置自动播放 -->
+    <video autoplay playsinline id="localVideo"></video>
+    <video autoplay playsinline id="remoteVideo"></video>
+
+
+    <div>
+        <button id="startBtn">开始</button>
+        <button id="callBtn">拨打</button>
+        <button id="hangupBtn">挂机</button>
+    </div>
+
+    <!-- 垫片，用于统一浏览器 API -->
+    <script src="js/adapter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
