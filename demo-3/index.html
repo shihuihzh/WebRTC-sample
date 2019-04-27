@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>带信令服务器的 WebRTC</title>
+
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <h1>带信令服务器的 WebRTC</h1>
+
+    <div id="videos">
+        <video id="localVideo" autoplay muted playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+
+    <!-- 垫片，用于统一浏览器 API -->
+    <script src="js/adapter.js"></script>
+    <!-- socket.io 支持-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
